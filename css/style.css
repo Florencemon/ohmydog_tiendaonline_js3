@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@200;400&display=swap');
+/*1.-VARIABLES*/
+/*2.-COLORS*/
+/*3.-FONTS*/
+/*4.-SIZES*/
+/*5.-MAIN&FOOTER*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0%;
+  padding: 0;
+}
+
+.header {
+  height: 30rem;
+  text-align: right;
+}
+
+.nav {
+  position: relative;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.171);
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  padding-inline-end: 5%;
+  padding-inline-start: 5%;
+}
+
+.nav__logo {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+.nav__marca {
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  color: #fe6600;
+  font-family: "Caprasimo", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.9em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-shadow: 1px 1px 1px rgb(255, 254, 254);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+
+.white {
+  color: #ffffff;
+}
+
+.Orange-light {
+  color: #f19737;
+}
+
+.Orange-dark {
+  color: #dc7b12;
+}
+
+.grey-light {
+  color: #868686;
+}
+
+.grey-dark {
+  color: #424242;
+}
+
+.gradient-orange {
+  background: rgb(255, 139, 6);
+  background: linear-gradient(28deg, rgb(138, 76, 5) 0%, rgb(240, 147, 60) 100%);
+}
+
+.logo {
+  height: 40px;
+}
+
+.top-header {
+  background-color: rgba(0, 0, 0, 0.171);
+}
+
+strong {
+  font-family: "Pacifico", sans-serif;
+  font-weight: 350;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: medium;
+}
+
+.nav-link:hover {
+  color: orange;
+}
+
+.btn-orange, .my__button__text {
+  border-radius: 50px;
+  position: relative;
+  background-color: #f19737;
+  border: none;
+  width: 110px;
+  height: 39px;
+  margin-top: 2%;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Comfortaa";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.card-body{
+  size: 28px;
+}
+
+.btn-orange:hover, .my__button__text:hover {
+    color: #ffffff;
+  background-color: #936327;
+  text-decoration: none;
+}
+
+#modalCart img {
+  width: 45px;
+}
+
+header .menu-white, header .show {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+header .menu-white:active, header .menu-white:visited, header .menu-white:active, header .menu-white:focus, header .show:active, header .show:visited, header .show:active, header .show:focus {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.drop-orange:active {
+  background-color: #f19737;
+}
+
+#form-imput-search:focus {
+  box-shadow: none;
+  size: 21px;
+}
+.text-muted{
+  color: #000;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.9em;
+}
+
+.titulo__footer {
+  color: #f2e1cb;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.9em;
+}
+.my__footer {
+  background-color:#8d285c;
+}
+.form__style__text {
+  font-family: "Comfortaa";
+  font-weight: 500px;
+  font-size: 1.7em;
+  text-decoration: none;
+  color: #c2c1c0;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Bienvenido a Oh my dog, la tienda especializada en accesorios, alimentos y cuidado para perros. Encuentra todo lo que necesitas para consentir a tu mejor amigo peludo. También ofrecemos servicios de farmacia, adopciones, emergencias de mascotas y peluquería canina.">
+		<meta name="keywords" content="Oh my dog, perros, accesorios para perros, alimentos para perros, cuidado de mascotas, juguetes para perros, correa para perros, camas para perros, farmacia para perros, adopciones de perros, emergencias de mascotas, peluquería canina">
+		<meta name="author" content="Florencia Chirino">
+		<title>Oh my god! | incio</title>
+		<script src="https://kit.fontawesome.com/efc9165130.js" crossorigin="anonymous"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/style.css">
+        <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<header class="container-fluid top-header">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<a href="./index.html" class="nav__marca">Oh my dog!</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#menu-collapsed-content" aria-controls="menu-collapsed-content"
+						aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse gap-4" id="menu-collapsed-content">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link menu-white" href="./index.html" id="tienda">Tienda</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle menu-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Seleccionar mascota</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item drop-orange" href="#" id="perro">Perros</a></li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item drop-orange" href="#" id="Gato">Gatos</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link menu-white d-none" aria-disabled="true" href="#" id="cartUpdate" data-bs-toggle="modal" data-bs-target="#cartModal">Ver carrito <i class="fa-solid fa-cart-shopping white"></i> </a>
+							</li>
+						</ul>
+						<form class="d-flex w-auto gap-2" role="search">
+							<input class="form-control" type="Buscar" placeholder="¿Qué estás buscando?" aria-label="Buscar" id="form-imput-search">
+							<button class="btn btn-outline-warning white" type="submit" id="search-button">Buscar</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="container">
+				<div class="col-12 my-5">
+					<h1 class="Orange-dark"><strong> Oh My Dog</strong> Pet Shop</h1>
+					</br>
+					<h2 class="Orange-light">Mirá todos los productos que tenemos para vos!</h2>
+				</div>
+				<div class="row">
+					<div id="no-products-message" class="text-center text-muted">
+						No se encontraron productos.
+					</div>
+					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2" id="products">
+					</div>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="cartModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+					aria-labelledby="cartModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="cartModalLabel">Carrito de compras</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body" id="modalCart">
+								...
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+								<button type="button" class="btn btn-primary btn-sm btn-orange" id="comprar">Comprar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="my__footer">
+			<div class="container-fluid">
+			<div class="row p-3 d-flex align-items-center">
+			<div class="col-xs-12 col-md-6 col-lg-3 text-center pb-5">
+				<div class="col-inter">
+					<a href="./index.html" class="nav__marca">Oh my dog!</a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-3 text-center pb-5">
+				<p class="titulo__footer">Seguinos en nuestras redes!</p>
+				<div class="row orange justify-content-center">
+					<div class="col-2 text-center">
+						<a href="https://www.instagram.com/" target="_blank">
+						<i class="fab fa-instagram" style="font-size: 30px;"title="Nuestro Instagram"></i>
+						</a>
+					</div>
+					<div class="col-2 text-center">
+						<a href="https://www.youtube.com/" target="_blank">
+						<i class="fab fa-youtube" style="font-size: 30px;" title="Nuestro Youtube"></i>
+						</a>
+					</div>
+					<div class="col-2 text-center">
+						<a href="https://m.facebook.com/" target="_blank">
+						<i class="fab fa-facebook" style="font-size: 30px;" title="Nuestro Facebook"></i>
+						</a>
+					</div>
+					<div class="col-2 text-center">
+						<a href="https://twitter.com/?" target="_blank">
+						<i class="fab fa-twitter" style="font-size: 30px;" title="Nuestro Twitter"></i>
+						</a>
+					</div>
+					<div class="col-2 text-center">
+						<a href="https://www.tiktok.com/" target="_blank">
+						<i class="fab fa-tiktok" style="font-size: 30px;" title="Ahora tenemos TikTok!"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-3 text-center pb-5">
+				<p class="titulo__footer">Contactanos!</p>
+				<div class="d-grid gap-3">
+					<div class="container__icon">
+						<!-- Utiliza la clase 'fas' y 'fa-phone' para agregar el ícono de teléfono -->
+						<i class="fas fa-phone" style="font-size: 30px;"></i>
+						<a href="tel:+011-1234-5678" class="form__style__text">011-1234-5678</a>
+					</div>
+					<div class="container__icon">
+						<!-- Utiliza la clase 'fas' y 'fa-envelope' para agregar el ícono de correo -->
+						<i class="fas fa-envelope" style="font-size: 30px;"></i>
+						<a href="mailto:oh-my-dog@dogmail.com" class="form__style__text">oh-my-dog@dogmail.com</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-3 text-center pb-5">
+				<p class="titulo__footer">Suscribite a nuestro newsletter:</p>
+				<div class="d-grid gap-3">
+					<div>
+						<form action="
+							" method="get" class="row">
+							<div class="col"><label class="form__style__text" for="Name"> Nombre </label>
+								<input class="my__input" type="text" name="Name" id="Name" required>
+							</div>
+							<div class="col">
+								<label class="form__style__text" for="E-mail">E-mail</label>
+								<input class="my__input" type="email" name="E-mail" id="E-mail" required>
+							</div>
+					</div>
+				</div>
+				<div class="d-flex justify-content-center">
+				<button type="button" class="my__button my__button__text">enviar</button>
+				</div>
+				</form>
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+		<script src="./js/script.js"></script>
+	</body>
+</html>

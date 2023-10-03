@@ -1,0 +1,21 @@
+header {
+    .menu-white, .show {
+        color: $white!important;
+        text-decoration: none;
+        &:active , &:visited, &:active, &:focus {
+            color: $white!important;
+            text-decoration: none;
+        }}
+}
+
+.drop-violet {
+    &:active{
+        background-color: $violet-light;
+    }
+}
+
+#form-imput-search {
+    &:focus {
+        box-shadow: none;
+    }
+}
